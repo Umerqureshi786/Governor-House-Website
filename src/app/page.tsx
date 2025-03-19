@@ -64,7 +64,7 @@ const Home = () => {
 
                 <br /> <br />
 
-                <div className='ml-16 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 lg:ml-0 lg:px-80 sm:gap-4 md:gap-4'>
+                {/* <div className='ml-16 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 lg:ml-0 lg:px-80 '>
 
                     <div className='  border-black text-center rounded-md items-center flex flex-col justify-center w-80'> <Image src={"/programming_fundamentals.jpg"} alt='programming fundamentals' height={500} width={500} className='rounded-t-xl' />  <div className='bg-white text-lg font-bold rounded-b-lg mt-4 text-neutral-700'>Programming Fundamentals</div>
                     </div>
@@ -72,7 +72,68 @@ const Home = () => {
                     <div className=' mt-8 border-black text-center rounded-md items-center flex flex-col justify-center w-80'> <Image src={"/nextjs..jpg"} alt='Web2 & nextjs' height={500} width={500} className='rounded-t-xl' /> <div className='bg-white text-lg font-bold rounded-b-lg mt-4 text-neutral-700'> Web2 Using NextJS </div></div>
                     <div className='mt-8 border-black text-center rounded-md items-center flex flex-col justify-center w-80'> <Image src={"/earn_as_your_learn.jpg"} alt='Earn as you learn' height={500} width={500} className='rounded-t-xl' /> <div className='bg-white text-lg font-bold rounded-b-lg mt-4 text-neutral-700 '>Earn as You Learn</div></div>
 
+                </div> */}
+
+
+
+
+
+
+
+                <div className='mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl'>
+                    {/* Card 1 */}
+                    <div className='w-full border-black text-center rounded-md items-center flex flex-col justify-center'>
+                        <div className='w-full overflow-hidden rounded-t-xl'>
+                            <Image
+                                src={"/programming_fundamentals.jpg"}
+                                alt='programming fundamentals'
+                                height={500}
+                                width={500}
+                                className='w-full h-auto object-cover'
+                            />
+                        </div>
+                        <div className='bg-white w-full text-base lg:text-lg font-bold rounded-b-lg py-4 text-neutral-700'>
+                            Programming Fundamentals
+                        </div>
+                    </div>
+
+                    {/* Card 2 */}
+                    <div className='w-full border-black text-center rounded-md items-center flex flex-col justify-center'>
+                        <div className='w-full overflow-hidden rounded-t-xl'>
+                            <Image
+                                src={"/nextjs..jpg"}
+                                alt='Web2 & nextjs'
+                                height={500}
+                                width={500}
+                                className='w-full h-auto object-cover'
+                            />
+                        </div>
+                        <div className='bg-white w-full text-base lg:text-lg font-bold rounded-b-lg py-4 text-neutral-700'>
+                            Web2 Using NextJS
+                        </div>
+                    </div>
+
+                    {/* Card 3 */}
+                    <div className='w-full border-black text-center rounded-md items-center flex flex-col justify-center'>
+                        <div className='w-full overflow-hidden rounded-t-xl'>
+                            <Image
+                                src={"/earn_as_your_learn.jpg"}
+                                alt='Earn as you learn'
+                                height={500}
+                                width={500}
+                                className='w-full h-auto object-cover'
+                            />
+                        </div>
+                        <div className='bg-white w-full text-base lg:text-lg font-bold rounded-b-lg py-4 text-neutral-700'>
+                            Earn as You Learn
+                        </div>
+                    </div>
                 </div>
+
+
+
+
+
 
             </div>
 
@@ -89,7 +150,7 @@ const Home = () => {
                 </div>
                 <br /> <br />
 
-                <div className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 md:px-56 lg:px-60'>
+                {/* <div className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 md:px-56 lg:px-60'>
                     <div className='  border-black text-center rounded-md items-center flex flex-col justify-center w-full'> <Image src={"/AI.jpg"} alt='AI' height={350} width={300} className='rounded-t-xl' /> <div className='bg-white text-lg font-bold rounded-b-lg mt-4 text-neutral-700'>Artificial Intelligence</div>
                     </div>
 
@@ -98,6 +159,40 @@ const Home = () => {
                     <div className='  border-black text-center rounded-md items-center flex flex-col justify-center w-full'> <Image src={"/iot.jpg"} alt='Iot' height={350} width={300} className='rounded-t-xl' /> <div className='bg-white text-lg font-bold rounded-b-lg mt-4 text-neutral-700'> Ambient Computing and IOT </div></div>
                     <div className='  border-black text-center rounded-md items-center flex flex-col justify-center w-full'><Image src={"/genomics.jpg"} alt='Iot' height={350} width={300} className='rounded-t-xl' /> <div className='bg-white text-lg font-bold rounded-b-lg mt-4 text-neutral-700'> Genomics and Bioinformatics </div></div>
                     <div className=' mt-7 border-black text-center rounded-md items-center flex flex-col justify-center w-full'><Image src={"/automation.jpg"} alt='Iot' height={350} width={300} className='rounded-t-xl' /> <div className='bg-white text-lg font-bold rounded-b-lg mt-4 text-neutral-700'> Network Programmability and Automation </div></div>
+                </div> */}
+
+
+
+
+
+
+
+
+                <div className='mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl'>
+                    {/* All Cards */}
+                    {[
+                        { img: "/AI.jpg", title: "Artificial Intelligence" },
+                        { img: "/metaverse.jpg", title: "Web 3 and Metaverse" },
+                        { img: "/cloudComputing.jpg", title: "Cloud-Native Computing" },
+                        { img: "/iot.jpg", title: "Ambient Computing and IOT" },
+                        { img: "/genomics.jpg", title: "Genomics and Bioinformatics" },
+                        { img: "/automation.jpg", title: "Network Programmability and Automation" }
+                    ].map((item, index) => (
+                        <div key={index} className='w-full border-black rounded-md flex flex-col'>
+                            <div className='w-full overflow-hidden rounded-t-xl aspect-square'>
+                                <Image
+                                    src={item.img}
+                                    alt={item.title}
+                                    height={350}
+                                    width={300}
+                                    className='w-full h-full object-cover'
+                                />
+                            </div>
+                            <div className='bg-white text-base lg:text-lg font-bold rounded-b-lg p-4 text-neutral-700'>
+                                {item.title}
+                            </div>
+                        </div>
+                    ))}
                 </div>
 
 
@@ -117,11 +212,11 @@ const Home = () => {
 
                 <div> <h2 className='text-xl font-bold  mr-36'>Social Links</h2>
                     <div className='mt-4 flex gap-3 '>
-                      <a href="https://www.facebook.com/TeamKTessori" target='blank'>  <img src="/communication.png" alt="fb" className='w-7 h-7'/> </a>
-                      <a href="https://www.youtube.com/@KamranTessorikk" target='blank'>  <img src="/youtube (1).png" alt="fb" className='w-7 h-7'/> </a>
-                      <a href="https://www.facebook.com/TeamKTessori" target='blank'>  <img src="/twitter (1).png" alt="fb" className='w-7 h-7'/> </a>
-                      <a href="https://www.instagram.com/KamranTessoriPk/" target='blank'>  <img src="/instagram (1).png" alt="fb" className='w-7 h-7'/> </a>
-                      <a href="https://www.instagram.com/KamranTessoriPk/" target='blank'>  <img src="/tiktok.png" alt="fb" className='w-7 h-7'/> </a>
+                        <a href="https://www.facebook.com/TeamKTessori" target='blank'>  <img src="/communication.png" alt="fb" className='w-7 h-7' /> </a>
+                        <a href="https://www.youtube.com/@KamranTessorikk" target='blank'>  <img src="/youtube (1).png" alt="fb" className='w-7 h-7' /> </a>
+                        <a href="https://www.facebook.com/TeamKTessori" target='blank'>  <img src="/twitter (1).png" alt="fb" className='w-7 h-7' /> </a>
+                        <a href="https://www.instagram.com/KamranTessoriPk/" target='blank'>  <img src="/instagram (1).png" alt="fb" className='w-7 h-7' /> </a>
+                        <a href="https://www.instagram.com/KamranTessoriPk/" target='blank'>  <img src="/tiktok.png" alt="fb" className='w-7 h-7' /> </a>
                     </div>
                 </div>
             </div>
