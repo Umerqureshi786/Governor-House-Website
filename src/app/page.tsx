@@ -64,7 +64,7 @@ const Home = () => {
 
                 <br /> <br />
 
-                <div className='ml-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:ml-0 lg:px-80'>
+                <div className='ml-16 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 lg:ml-0 lg:px-80 sm:gap-4 md:gap-4'>
 
                     <div className='  border-black text-center rounded-md items-center flex flex-col justify-center w-80'> <Image src={"/programming_fundamentals.jpg"} alt='programming fundamentals' height={500} width={500} className='rounded-t-xl' />  <div className='bg-white text-lg font-bold rounded-b-lg mt-4 text-neutral-700'>Programming Fundamentals</div>
                     </div>
@@ -90,7 +90,8 @@ const Home = () => {
                 <br /> <br />
 
                 <div className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 md:px-56 lg:px-60'>
-                    <div className='  border-black text-center rounded-md items-center flex flex-col justify-center w-full'> <Image src={"/AI.jpg"} alt='AI' height={350} width={300} className='rounded-t-xl' /> <div className='bg-white text-lg font-bold rounded-b-lg mt-4 text-neutral-700'>Artificial Intelligence</div></div>
+                    <div className='  border-black text-center rounded-md items-center flex flex-col justify-center w-full'> <Image src={"/AI.jpg"} alt='AI' height={350} width={300} className='rounded-t-xl' /> <div className='bg-white text-lg font-bold rounded-b-lg mt-4 text-neutral-700'>Artificial Intelligence</div>
+                    </div>
 
                     <div className='  border-black text-center rounded-md items-center flex flex-col justify-center w-full'> <Image src={"/metaverse.jpg"} alt='Metaverse' height={350} width={300} className='rounded-t-xl' /> <div className='bg-white text-lg font-bold rounded-b-lg mt-4 text-neutral-700'> Web 3 and Metaverse </div> </div>
                     <div className='  border-black text-center rounded-md items-center flex flex-col justify-center w-full'> <Image src={"/cloudComputing.jpg"} alt='Cloud Computing' height={350} width={300} className='rounded-t-xl' /> <div className='bg-white text-lg font-bold rounded-b-lg mt-4 text-neutral-700'>Cloud-Native Computing </div> </div>
@@ -111,9 +112,6 @@ const Home = () => {
 
 
                 <div className='flex flex-col gap-2 '> <h2 className='text-xl font-bold'>Advanced Courses</h2>  <a href="#">Artificial Intelligence and Deep Learning</a><a href="#">Web3 and Metaverse</a><a href="#"> Cloud-Native Computing</a><a href="#">Ambient Computing and IOT</a><a href="#">Genomics and Bioinformatics</a><a href="#">Network Programmability and Automation </a></div>
-
-
-
 
 
 
