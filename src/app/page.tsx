@@ -189,14 +189,15 @@ const Home = () => {
                                 />
                             </div>
                             <div className='bg-white text-base lg:text-lg font-bold rounded-b-lg p-4 text-neutral-700'>
-                                {item.title}
+                                {item.title}                                                                                                                                                                    
                             </div>
                         </div>
                     ))}
                 </div>
 
 
-            </div>
+
+            </div>  
 
             <br /> <br /> <br />
 
@@ -209,7 +210,7 @@ const Home = () => {
                 <div className='flex flex-col gap-2 '> <h2 className='text-xl font-bold'>Advanced Courses</h2>  <a href="#">Artificial Intelligence and Deep Learning</a><a href="#">Web3 and Metaverse</a><a href="#"> Cloud-Native Computing</a><a href="#">Ambient Computing and IOT</a><a href="#">Genomics and Bioinformatics</a><a href="#">Network Programmability and Automation </a></div>
 
 
-
+z
                 <div> <h2 className='text-xl font-bold  mr-36'>Social Links</h2>
                     <div className='mt-4 flex gap-3 '>
                         <a href="https://www.facebook.com/TeamKTessori" target='blank'>  <img src="/communication.png" alt="fb" className='w-7 h-7' /> </a>

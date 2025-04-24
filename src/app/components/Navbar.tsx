@@ -9,8 +9,11 @@ const Navbar = () => {
                 <Image src={"/Logo.png"} alt='logo' width={80} height={75} />
             </div>
 
-            <div className=' mt-4 text-xl font-bold text-sky-200 ml-16'> <h1>Tuition Free Education Program on Latest Technologies</h1>
-            </div>
+            <div className="hidden md:block md:mt-4 md:text-xl md:font-bold text-sky-200 md:ml-16 
+                lg:mt-4 lg:text-xl lg:font-bold lg:ml-16">
+  <h1>Tuition Free Education Program on Latest Technologies</h1>
+</div>
+
 
             <div className='ml-auto'>
                 <nav className='flex text-white mt-4 space-x-8 mr-80'>
